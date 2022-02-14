@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  margin: 22px 20px 0 20px;
+  margin: 22px 20px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -32,7 +32,7 @@ header .menu-button {
 }
 
 .hero-primary {
-  padding: 55px 10px 10px 10px;
+  padding: 55px 10px 10px;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
