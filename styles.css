@@ -56,3 +56,11 @@ header .menu-button {
 .social {
   margin-right: 18px;
 }
+
+.hero-section .scroll-button {
+  background: none;
+  border: 1px solid #dfe1e6;
+  border-radius: 32px;
+  margin: 64px 0 22px;
+  padding-top: 6px;
+}
