@@ -11,7 +11,7 @@ header {
 }
 
 header .welcome {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -26,7 +26,7 @@ header .menu-button {
   margin-top: 16px;
   color: #172b4d;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   background-image: url("images/backround images/Header backround mobile/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
 }
