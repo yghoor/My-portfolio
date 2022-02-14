@@ -23,6 +23,7 @@ header .menu-button {
 }
 
 .hero-section {
+  margin-top: 16px;
   color: #172b4d;
   text-align: center;
   font-family: "Inter", sans-serif;
