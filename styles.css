@@ -17,3 +17,42 @@ header .menu-button {
   background: none;
   border: none;
 }
+
+.hero-section {
+  color: #172b4d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-primary {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 58px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-primary em {
+  font-style: normal;
+  color: #36b37e;
+}
+
+.hero-secondary {
+  margin: 58px 16px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.socials ul {
+  padding-left: 18px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  margin-right: 18px;
+}
