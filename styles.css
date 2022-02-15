@@ -31,8 +31,9 @@ header .menu-button {
   background-repeat: no-repeat;
 }
 
-.hero-primary {
-  padding: 55px 10px 10px;
+.hero-section h1,
+.hero-section h2 {
+  padding: 55px 10px 0;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -41,8 +42,8 @@ header .menu-button {
   flex-direction: column;
 }
 
-.hero-primary em {
-  font-style: normal;
+.hero-section h2 {
+  padding: 0 10px 10px;
   color: #36b37e;
 }
 
