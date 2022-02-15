@@ -100,3 +100,8 @@ header .menu-button {
   display: flex;
   flex-direction: column;
 }
+
+.project img {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
