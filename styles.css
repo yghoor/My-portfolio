@@ -94,3 +94,9 @@ header .menu-button {
   display: grid;
   grid-template: auto / 100%;
 }
+
+.project {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+}
