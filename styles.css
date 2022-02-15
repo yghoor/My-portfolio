@@ -111,12 +111,25 @@ header .menu-button {
   font-weight: 600;
   line-height: 32px;
   text-align: center;
-  margin: 16px 0px;
+  margin: 16px 0;
 }
 
 .project .tags {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 16px 0px;
+  margin: 16px 0;
+}
+
+.project .tag {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  margin: 0 8px;
 }
