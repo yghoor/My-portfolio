@@ -72,3 +72,10 @@ header .menu-button {
   margin: 42px 0 0;
   padding-top: 6px;
 }
+
+.projects-header {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
