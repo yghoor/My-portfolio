@@ -113,3 +113,10 @@ header .menu-button {
   text-align: center;
   margin: 16px 0px;
 }
+
+.project .tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0px;
+}
