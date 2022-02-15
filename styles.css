@@ -79,3 +79,13 @@ header .menu-button {
   flex-direction: column;
   text-align: center;
 }
+
+.projects-header .header-text {
+  margin: 24px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
