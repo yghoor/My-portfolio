@@ -89,3 +89,8 @@ header .menu-button {
   line-height: 52px;
   color: #172b4d;
 }
+
+.project-list {
+  display: grid;
+  grid-template: auto / 100%;
+}
