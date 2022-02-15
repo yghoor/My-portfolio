@@ -15,6 +15,10 @@
 
 - GitHub: [@githubhandle](https://github.com/yghoor)
 
+## Acknowledgments
+
+- Images from [Unsplash](https://unsplash.com)
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
