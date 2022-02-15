@@ -90,6 +90,10 @@ header .menu-button {
   color: #172b4d;
 }
 
+.projects-header .indicator-icon {
+  margin-bottom: 36px;
+}
+
 .project-list {
   display: grid;
   grid-template: auto / 100%;
