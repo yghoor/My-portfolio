@@ -105,3 +105,11 @@ header .menu-button {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
 }
+
+.project h2 {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  margin: 16px 0px;
+}
