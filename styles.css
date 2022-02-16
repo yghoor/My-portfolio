@@ -221,3 +221,17 @@ header .menu-button {
   display: flex;
   flex-direction: column;
 }
+
+.about-me .technology img {
+  width: 327px;
+  height: 128px;
+}
+
+.about-me .technology h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 24px 0;
+  color: #344563;
+  text-align: center;
+}
