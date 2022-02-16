@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: Inter, sans-serif;
 }
 
 ul {
@@ -15,7 +16,6 @@ header {
 }
 
 header .welcome {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -30,7 +30,6 @@ header .menu-button {
   margin-top: 16px;
   color: #172b4d;
   text-align: center;
-  font-family: Inter, sans-serif;
   background-image: url("images/backround images/Header backround mobile/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
 }
@@ -87,7 +86,6 @@ header .menu-button {
 
 .projects-header .header-text {
   margin: 24px;
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -116,7 +114,6 @@ header .menu-button {
 }
 
 .project h2 {
-  font-family: Inter, sans-serif;
   font-weight: 600;
   line-height: 32px;
   text-align: center;
@@ -132,7 +129,6 @@ header .menu-button {
 }
 
 .project .tag {
-  font-family: Inter, sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -145,7 +141,6 @@ header .menu-button {
 }
 
 .see-project-button {
-  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
