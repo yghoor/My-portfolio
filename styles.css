@@ -140,7 +140,7 @@ header .menu-button {
   margin: 0 8px;
 }
 
-.see-project-button {
+.button {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -152,6 +152,9 @@ header .menu-button {
   background: #36b37f;
   border-radius: 4px;
   border: none;
+}
+
+.see-project {
   width: 122px;
   height: 48px;
   align-self: center;
