@@ -169,13 +169,13 @@ header .menu-button {
   background: #008552;
 }
 
-.about-me {
+.about-me .about-me-top {
   display: flex;
   flex-direction: column;
   text-align: center;
   background: url("images/backround-images/mobile-backrounds/about-me-background1-mobile.svg"),
     url("images/backround-images/mobile-backrounds/about-me-background2-mobile.svg");
-  background-position: 0 93%, 100% 0;
+  background-position: 0 100%, 100% 0;
   background-repeat: no-repeat, no-repeat;
 }
 
