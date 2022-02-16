@@ -173,7 +173,8 @@ header .menu-button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: url("images/backround-images/mobile-backrounds/about-me-background1-mobile.svg"),
+  background:
+    url("images/backround-images/mobile-backrounds/about-me-background1-mobile.svg"),
     url("images/backround-images/mobile-backrounds/about-me-background2-mobile.svg");
   background-position: 0 100%, 100% -40px;
   background-repeat: no-repeat, no-repeat;
