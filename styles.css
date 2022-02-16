@@ -160,11 +160,11 @@ header .menu-button {
   align-self: center;
 }
 
-.see-project-button:hover {
+.button:hover {
   background: #36b37f;
   box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
 }
 
-.see-project-button:active {
+.button:active {
   background: #008552;
 }
