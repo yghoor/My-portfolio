@@ -312,3 +312,8 @@ header .menu-button {
   font-size: 15px;
   color: #091e42;
 }
+
+.get-in-contact form button {
+  width: 129px;
+  align-self: center;
+}
