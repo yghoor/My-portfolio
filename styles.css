@@ -317,3 +317,8 @@ header .menu-button {
   width: 129px;
   align-self: center;
 }
+
+.get-in-contact nav {
+  margin: 6px 0 8px;
+  padding-left: 16px;
+}
