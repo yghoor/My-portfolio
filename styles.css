@@ -204,7 +204,7 @@ header .menu-button {
 }
 
 .about-me .technologies {
-  margin: 58px 0;
+  margin: 58px 0 36px;
   padding: 1px;
   display: flex;
   flex-direction: column;
