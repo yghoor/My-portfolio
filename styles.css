@@ -267,3 +267,10 @@ header .menu-button {
   padding: 0 24px;
 }
 
+.get-in-contact .primary-text {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+}
