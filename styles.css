@@ -265,6 +265,9 @@ header .menu-button {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
+  background-image: url("images/backround-images/mobile-backrounds/contact-form-backround-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 76%;
 }
 
 .get-in-contact .primary-text {
