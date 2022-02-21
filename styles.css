@@ -337,3 +337,10 @@ header .menu-button {
   text-align: center;
   color: #42526e;
 }
+
+@media only screen and (min-width: 1440px) {
+  header .welcome,
+  header .menu-button {
+    display: none;
+  }
+}
