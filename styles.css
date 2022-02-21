@@ -32,6 +32,7 @@ header .menu-button {
   text-align: center;
   background-image: url("images/backround-images/mobile-backrounds/header-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .hero-section h1,
