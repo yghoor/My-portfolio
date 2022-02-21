@@ -106,6 +106,8 @@ header .menu-button {
   margin: 24px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
 }
 
 .project img {
