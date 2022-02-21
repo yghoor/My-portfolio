@@ -285,6 +285,7 @@ header .menu-button {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-self: center;
 }
 
 .get-in-contact form input {
