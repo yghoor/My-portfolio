@@ -98,7 +98,7 @@ header .menu-button {
   margin-bottom: 36px;
 }
 
-.project-list {
+#project-list {
   display: grid;
   grid-template: auto / 100%;
 }
@@ -171,7 +171,7 @@ header .menu-button {
   background: #008552;
 }
 
-.about-me .about-me-top {
+#about-me .about-me-top {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -182,7 +182,7 @@ header .menu-button {
   background-repeat: no-repeat, no-repeat;
 }
 
-.about-me h2 {
+#about-me h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -190,7 +190,7 @@ header .menu-button {
   margin: 24px 0;
 }
 
-.about-me .about-me-para {
+#about-me .about-me-para {
   font-size: 20px;
   line-height: 32px;
   margin: 0 0 10px;
@@ -198,14 +198,14 @@ header .menu-button {
   color: #42526e;
 }
 
-.about-me .get-resume {
+#about-me .get-resume {
   width: 159px;
   height: 48px;
   align-self: center;
   margin-bottom: 0;
 }
 
-.about-me .technologies {
+#about-me .technologies {
   margin: 58px 0 36px;
   padding: 1px;
   display: flex;
@@ -213,7 +213,7 @@ header .menu-button {
   align-items: center;
 }
 
-.about-me .technology {
+#about-me .technology {
   margin: 0 0 24px;
   padding-top: 30px;
   border: 1px solid #c1c7d0;
@@ -226,12 +226,12 @@ header .menu-button {
   flex-direction: column;
 }
 
-.about-me .technology img {
+#about-me .technology img {
   width: 327px;
   height: 128px;
 }
 
-.about-me .technology h2 {
+#about-me .technology h2 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -240,7 +240,7 @@ header .menu-button {
   text-align: center;
 }
 
-.about-me .technology .tags {
+#about-me .technology .tags {
   display: flex;
   flex-wrap: wrap;
   margin: 24px 0;
@@ -250,7 +250,7 @@ header .menu-button {
   width: 333px;
 }
 
-.about-me .technology .tag {
+#about-me .technology .tag {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -263,7 +263,7 @@ header .menu-button {
   align-self: center;
 }
 
-.get-in-contact {
+#get-in-contact {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
@@ -272,7 +272,7 @@ header .menu-button {
   background-position: 100% 76%;
 }
 
-.get-in-contact .primary-text {
+#get-in-contact .primary-text {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -281,7 +281,7 @@ header .menu-button {
   color: #172b4d;
 }
 
-.get-in-contact form {
+#get-in-contact form {
   width: 327px;
   display: flex;
   flex-direction: column;
@@ -289,7 +289,7 @@ header .menu-button {
   align-self: center;
 }
 
-.get-in-contact form input {
+#get-in-contact form input {
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
@@ -299,12 +299,12 @@ header .menu-button {
   padding: 15px 16px;
 }
 
-.get-in-contact form input::placeholder {
+#get-in-contact form input::placeholder {
   font-size: 15px;
   color: #6b778c;
 }
 
-.get-in-contact form textarea {
+#get-in-contact form textarea {
   width: 327px;
   height: 114px;
   border: 1px solid #60c095;
@@ -314,22 +314,22 @@ header .menu-button {
   margin-bottom: 10px;
 }
 
-.get-in-contact form textarea::placeholder {
+#get-in-contact form textarea::placeholder {
   font-size: 15px;
   color: #091e42;
 }
 
-.get-in-contact form button {
+#get-in-contact form button {
   width: 129px;
   align-self: center;
 }
 
-.get-in-contact nav {
+#get-in-contact nav {
   margin: 6px 0 8px;
   padding-left: 16px;
 }
 
-.get-in-contact .my-email {
+#get-in-contact .my-email {
   width: auto;
   height: 189px;
   font-size: 20px;
@@ -344,3 +344,4 @@ header .menu-button {
     display: none;
   }
 }
+
