@@ -390,6 +390,28 @@ header .menu-button {
     height: 500px;
     margin: 12px;
   }
+
+  #about-me .about-me-top {
+    padding-top: 152px;
+    align-self: center;
+    background:
+      url("images/backround-images/desktop-backgrounds/about-me-background1-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/about-me-background2-desktop.svg");
+    background-position: 0 70%, 100% 35%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .about-me-para {
+    width: 770px;
+    align-self: center;
+  }
+
+  #about-me .technologies {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
