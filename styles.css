@@ -352,7 +352,7 @@ header .menu-button {
 
 .header-desktop {
   justify-content: center;
-  margin: 0;
+  margin-top: 16px;
   padding: 0;
 }
 
