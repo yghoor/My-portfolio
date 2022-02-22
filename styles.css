@@ -345,3 +345,31 @@ header .menu-button {
   }
 }
 
+.header-desktop {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-desktop ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-desktop li {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  padding: 10px 12px;
+}
+
+.header-desktop a {
+  text-decoration: none;
+}
+
+.header-desktop a:visited {
+  color: #344563;
+}
