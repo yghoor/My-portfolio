@@ -339,8 +339,7 @@ header .menu-button {
 }
 
 @media only screen and (min-width: 1440px) {
-  .header-mobile .welcome,
-  .header-mobile .menu-button {
+  .header-mobile {
     display: none;
   }
 }
