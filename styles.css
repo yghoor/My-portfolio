@@ -375,6 +375,21 @@ header .menu-button {
     margin-bottom: 24px;
     line-height: 32px;
   }
+
+  .projects-header .indicator-icon {
+    display: none;
+  }
+
+  .projects {
+    grid-template: 50% 50% / 1fr 1fr 1fr;
+    padding: 0 106px 0 117px;
+  }
+
+  .project {
+    width: auto;
+    height: 500px;
+    margin: 12px 12px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
