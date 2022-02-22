@@ -412,6 +412,39 @@ header .menu-button {
     justify-content: center;
     gap: 24px;
   }
+
+  #get-in-contact {
+    flex-flow: row wrap;
+    padding: 0 111px;
+    margin-top: 118px;
+    justify-content: center;
+    background-image:
+      url("images/backround-images/desktop-backgrounds/contact-form-background1-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/contact-form-background2-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/contact-form-background3-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0 100%, 20% 75%, 100% 100%;
+  }
+
+  #get-in-contact .primary-text {
+    font-size: 30px;
+    max-width: 463px;
+    margin: 24px;
+  }
+
+  #get-in-contact form {
+    width: 684px;
+  }
+
+  #get-in-contact form input,
+  #get-in-contact form textarea {
+    width: 684px;
+  }
+
+  #get-in-contact form button {
+    align-self: baseline;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
