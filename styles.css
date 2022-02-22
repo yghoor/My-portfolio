@@ -98,7 +98,7 @@ header .menu-button {
   margin-bottom: 36px;
 }
 
-#project-list {
+.projects {
   display: grid;
   grid-template: auto / 100%;
 }
