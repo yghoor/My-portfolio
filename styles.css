@@ -345,6 +345,12 @@ header .menu-button {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .header-desktop {
+    display: none;
+  }
+}
+
 .header-desktop {
   justify-content: center;
   margin: 0;
