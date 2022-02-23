@@ -480,12 +480,12 @@ header .menu-button {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: #344563;
   padding: 10px 12px;
 }
 
 .header-desktop a {
   text-decoration: none;
+  color: #344563;
 }
 
 .header-desktop a:visited {
