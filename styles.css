@@ -276,6 +276,7 @@ header .menu-button {
   background-image: url("images/backround-images/mobile-backrounds/contact-form-backround-mobile.svg");
   background-repeat: no-repeat;
   background-position: 100% 76%;
+  background-size: 15% auto;
 }
 
 #get-in-contact .primary-text {
@@ -357,6 +358,7 @@ header .menu-button {
     width: auto;
     height: 1100px;
     background-image: url("images/backround-images/desktop-backgrounds/header-background-desktop.svg");
+    background-size: 100% auto;
   }
 
   .hero-section h1,
@@ -405,8 +407,9 @@ header .menu-button {
     background:
       url("images/backround-images/desktop-backgrounds/about-me-background1-desktop.svg"),
       url("images/backround-images/desktop-backgrounds/about-me-background2-desktop.svg");
-    background-position: 0 70%, 100% 35%;
+    background-position: 0 90%, 100% 35%;
     background-repeat: no-repeat, no-repeat;
+    background-size: 15% auto, 13% auto;
   }
 
   .about-me-para {
@@ -431,7 +434,8 @@ header .menu-button {
       url("images/backround-images/desktop-backgrounds/contact-form-background2-desktop.svg"),
       url("images/backround-images/desktop-backgrounds/contact-form-background3-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0 80%, 20% 70%, 100% 45%;
+    background-position: 0 80%, 20% 75%, 100% 45%;
+    background-size: 14% auto, 11% auto, 15% auto;
   }
 
   #get-in-contact .primary-text {
