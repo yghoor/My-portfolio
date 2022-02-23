@@ -338,7 +338,7 @@ header .menu-button {
   color: #42526e;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1080px) {
   .header-mobile {
     display: none;
   }
@@ -457,7 +457,7 @@ header .menu-button {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   .header-desktop {
     display: none;
   }
