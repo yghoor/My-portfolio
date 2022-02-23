@@ -395,6 +395,7 @@ header .menu-button {
     width: auto;
     height: 500px;
     margin: 12px;
+    max-width: 369px;
   }
 
   #about-me .about-me-top {
