@@ -445,6 +445,10 @@ header .menu-button {
     align-self: baseline;
     margin-left: 0;
   }
+
+  #get-in-contact .my-email {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
