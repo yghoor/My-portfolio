@@ -423,7 +423,7 @@ header .menu-button {
       url("images/backround-images/desktop-backgrounds/contact-form-background2-desktop.svg"),
       url("images/backround-images/desktop-backgrounds/contact-form-background3-desktop.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0 100%, 20% 75%, 100% 100%;
+    background-position: 0 80%, 20% 70%, 100% 45%;
   }
 
   #get-in-contact .primary-text {
