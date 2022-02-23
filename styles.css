@@ -461,6 +461,10 @@ header .menu-button {
   .header-desktop {
     display: none;
   }
+
+  hr {
+    display: none;
+  }
 }
 
 .header-desktop {
