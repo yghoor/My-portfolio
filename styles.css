@@ -395,10 +395,9 @@ header .menu-button {
   }
 
   .project {
-    width: auto;
-    height: 500px;
+    min-width: 369px;
+    height: auto;
     margin: 12px;
-    max-width: 369px;
   }
 
   #about-me .about-me-top {
