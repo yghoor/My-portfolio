@@ -82,10 +82,6 @@ header .menu-button {
   transition: all 0.25s;
 }
 
-.social img:hover {
- transform: scale(1.25);
-}
-
 .hero-section .scroll-button {
   background: none;
   border: 1px solid #dfe1e6;
@@ -140,6 +136,10 @@ header .menu-button {
 
 .project img {
   border-radius: 8px;
+}
+
+.social img:hover {
+  transform: scale(1.25);
 }
 
 .project h2 {
