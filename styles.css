@@ -33,6 +33,7 @@ header .menu-button {
   background-image: url("images/backround-images/mobile-backrounds/header-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 .hero-section h1,
@@ -46,9 +47,14 @@ header .menu-button {
   flex-direction: column;
 }
 
+.hero-section h1 {
+  animation: slide-in-right 1.5s;
+}
+
 .hero-section h2 {
   padding: 0 10px 10px;
   color: #36b37e;
+  animation: slide-in-left 1.5s;
 }
 
 .hero-secondary {
@@ -56,6 +62,7 @@ header .menu-button {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  animation: fade-in 3s;
 }
 
 .socials ul {
@@ -64,6 +71,7 @@ header .menu-button {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-in 1.5s;
 }
 
 .social {
@@ -76,6 +84,7 @@ header .menu-button {
   border-radius: 32px;
   margin: 42px 0 0;
   padding-top: 6px;
+  animation: fade-in 1.5s;
 }
 
 .projects-header {
@@ -493,6 +502,7 @@ header .menu-button {
   justify-content: center;
   margin-top: 16px;
   padding: 0;
+  animation: fade-in 1.5s;
 }
 
 .header-desktop ul {
@@ -512,4 +522,42 @@ header .menu-button {
 .header-desktop a {
   text-decoration: none;
   color: #344563;
+}
+
+@keyframes slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    margin-right: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
