@@ -374,10 +374,6 @@ ul {
 }
 
 @media only screen and (min-width: 1080px) {
-  .header-mobile {
-    display: none;
-  }
-
   .hero-section {
     display: flex;
     flex-direction: column;
@@ -502,6 +498,12 @@ ul {
   }
 
   hr {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .header-mobile {
     display: none;
   }
 }
