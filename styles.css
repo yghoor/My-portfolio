@@ -26,6 +26,32 @@ ul {
   border: none;
 }
 
+.header-desktop {
+  margin: 16px 20px 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.header-desktop ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-desktop li {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 12px;
+}
+
+.header-desktop a {
+  text-decoration: none;
+  color: #344563;
+}
+
 .hero-section {
   margin-top: 16px;
   color: #172b4d;
@@ -476,29 +502,4 @@ ul {
   hr {
     display: none;
   }
-}
-
-.header-desktop {
-  justify-content: center;
-  margin-top: 16px;
-  padding: 0;
-}
-
-.header-desktop ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.header-desktop li {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 12px;
-}
-
-.header-desktop a {
-  text-decoration: none;
-  color: #344563;
 }
