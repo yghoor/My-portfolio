@@ -347,7 +347,19 @@ ul {
   color: #42526e;
 }
 
+.header-desktop {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
 @media only screen and (min-width: 1080px) {
+  .header-mobile {
+    display: none;
+  }
+
   .header-desktop {
     margin: 16px 20px 0;
     display: flex;
@@ -492,18 +504,3 @@ ul {
   }
 }
 
-@media only screen and (max-width: 990px) {
-  .header-desktop {
-    display: none;
-  }
-
-  hr {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 990px) {
-  .header-mobile {
-    display: none;
-  }
-}
