@@ -9,19 +9,19 @@ ul {
   list-style-type: none;
 }
 
-header {
+.header-mobile {
   margin: 22px 20px 0;
   display: flex;
   justify-content: space-between;
 }
 
-header .welcome {
+.header-mobile .welcome {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
 }
 
-header .menu-button {
+.header-mobile .menu-button {
   background: none;
   border: none;
 }
