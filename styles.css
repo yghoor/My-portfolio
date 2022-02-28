@@ -205,7 +205,7 @@ header .menu-button {
 }
 
 .about-me .technologies {
-  margin: 58px 0;
+  margin: 58px 0 36px;
   padding: 1px;
   display: flex;
   flex-direction: column;
@@ -260,4 +260,78 @@ header .menu-button {
   border-radius: 8px;
   margin: 8px 8px 0 0;
   align-self: center;
+}
+
+.get-in-contact {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-image: url("images/backround-images/mobile-backrounds/contact-form-backround-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 76%;
+}
+
+.get-in-contact .primary-text {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0 0 58px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.get-in-contact form {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.get-in-contact form input {
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  width: 327px;
+  height: 48px;
+  padding: 15px 16px;
+}
+
+.get-in-contact form input::placeholder {
+  font-size: 15px;
+  color: #6b778c;
+}
+
+.get-in-contact form textarea {
+  width: 327px;
+  height: 114px;
+  border: 1px solid #60c095;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.get-in-contact form textarea::placeholder {
+  font-size: 15px;
+  color: #091e42;
+}
+
+.get-in-contact form button {
+  width: 129px;
+  align-self: center;
+}
+
+.get-in-contact nav {
+  margin: 6px 0 8px;
+  padding-left: 16px;
+}
+
+.get-in-contact .my-email {
+  width: auto;
+  height: 189px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
