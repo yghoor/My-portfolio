@@ -443,7 +443,7 @@ hr {
   }
 
   .project {
-    min-width: 369px;
+    width: 333px;
     height: auto;
     margin: 12px;
   }
