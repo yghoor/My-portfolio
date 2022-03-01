@@ -510,6 +510,7 @@ hr {
   }
 
   #get-in-contact hr {
+    display: block;
     margin-top: 200px;
     border: 1px solid #dfe1e6;
     width: 100%;
