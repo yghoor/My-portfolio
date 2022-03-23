@@ -9,19 +9,19 @@ ul {
   list-style-type: none;
 }
 
-header {
+.header-mobile {
   margin: 22px 20px 0;
   display: flex;
   justify-content: space-between;
 }
 
-header .welcome {
+.header-mobile .welcome {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
 }
 
-header .menu-button {
+.header-mobile .menu-button {
   background: none;
   border: none;
 }
@@ -32,6 +32,12 @@ header .menu-button {
   text-align: center;
   background-image: url("images/backround-images/mobile-backrounds/header-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: 100%;
+  height: 173vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section h1,
@@ -74,7 +80,8 @@ header .menu-button {
   border: 1px solid #dfe1e6;
   border-radius: 32px;
   margin: 42px 0 0;
-  padding-top: 6px;
+  padding: 6px 1px 0 0;
+  width: 36px;
 }
 
 .projects-header {
@@ -97,17 +104,21 @@ header .menu-button {
   margin-bottom: 36px;
 }
 
-.project-list {
+.projects {
   display: grid;
   grid-template: auto / 100%;
+  justify-content: center;
 }
 
 .project {
+  justify-self: center;
   margin: 24px;
   display: flex;
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  max-width: 327px;
+  justify-content: center;
 }
 
 .project img {
@@ -118,7 +129,9 @@ header .menu-button {
   font-weight: 600;
   line-height: 32px;
   text-align: center;
+  align-self: center;
   margin: 16px 0;
+  width: 295px;
 }
 
 .project .tags {
@@ -170,7 +183,7 @@ header .menu-button {
   background: #008552;
 }
 
-.about-me .about-me-top {
+#about-me .about-me-top {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -181,7 +194,7 @@ header .menu-button {
   background-repeat: no-repeat, no-repeat;
 }
 
-.about-me h2 {
+#about-me h2 {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -189,7 +202,7 @@ header .menu-button {
   margin: 24px 0;
 }
 
-.about-me .about-me-para {
+#about-me .about-me-para {
   font-size: 20px;
   line-height: 32px;
   margin: 0 0 10px;
@@ -197,14 +210,14 @@ header .menu-button {
   color: #42526e;
 }
 
-.about-me .get-resume {
+#about-me .get-resume {
   width: 159px;
   height: 48px;
   align-self: center;
   margin-bottom: 0;
 }
 
-.about-me .technologies {
+#about-me .technologies {
   margin: 58px 0 36px;
   padding: 1px;
   display: flex;
@@ -212,7 +225,7 @@ header .menu-button {
   align-items: center;
 }
 
-.about-me .technology {
+#about-me .technology {
   margin: 0 0 24px;
   padding-top: 30px;
   border: 1px solid #c1c7d0;
@@ -223,14 +236,15 @@ header .menu-button {
   background: #ebf0ee;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.about-me .technology img {
+#about-me .technology img {
   width: 327px;
   height: 128px;
 }
 
-.about-me .technology h2 {
+#about-me .technology h2 {
   font-size: 24px;
   line-height: 32px;
   font-weight: 600;
@@ -239,7 +253,7 @@ header .menu-button {
   text-align: center;
 }
 
-.about-me .technology .tags {
+#about-me .technology .tags {
   display: flex;
   flex-wrap: wrap;
   margin: 24px 0;
@@ -249,7 +263,7 @@ header .menu-button {
   width: 333px;
 }
 
-.about-me .technology .tag {
+#about-me .technology .tag {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
@@ -262,16 +276,17 @@ header .menu-button {
   align-self: center;
 }
 
-.get-in-contact {
+#get-in-contact {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
   background-image: url("images/backround-images/mobile-backrounds/contact-form-backround-mobile.svg");
   background-repeat: no-repeat;
   background-position: 100% 76%;
+  background-size: 15% auto;
 }
 
-.get-in-contact .primary-text {
+#get-in-contact .primary-text {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -280,14 +295,15 @@ header .menu-button {
   color: #172b4d;
 }
 
-.get-in-contact form {
+#get-in-contact form {
   width: 327px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-self: center;
 }
 
-.get-in-contact form input {
+#get-in-contact form input {
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 4px;
@@ -297,12 +313,12 @@ header .menu-button {
   padding: 15px 16px;
 }
 
-.get-in-contact form input::placeholder {
+#get-in-contact form input::placeholder {
   font-size: 15px;
   color: #6b778c;
 }
 
-.get-in-contact form textarea {
+#get-in-contact form textarea {
   width: 327px;
   height: 114px;
   border: 1px solid #60c095;
@@ -312,26 +328,208 @@ header .menu-button {
   margin-bottom: 10px;
 }
 
-.get-in-contact form textarea::placeholder {
+#get-in-contact form textarea::placeholder {
   font-size: 15px;
   color: #091e42;
 }
 
-.get-in-contact form button {
+#get-in-contact form button {
   width: 129px;
   align-self: center;
 }
 
-.get-in-contact nav {
+#get-in-contact nav {
   margin: 6px 0 8px;
   padding-left: 16px;
 }
 
-.get-in-contact .my-email {
+#get-in-contact .my-email {
   width: auto;
   height: 189px;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
   color: #42526e;
+}
+
+.header-desktop {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-section {
+    background-size: 100% 100%;
+    min-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    grid-template: 1fr 1fr 1fr / 50% 50%;
+  }
+
+  #about-me .technologies {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #about-me .technology {
+    margin-top: -24px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    margin: 16px 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .header-desktop ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-desktop li {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 12px;
+  }
+
+  .header-desktop a {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 1100px;
+    background-image: url("images/backround-images/desktop-backgrounds/header-background-desktop.svg");
+    background-size: 100% auto;
+  }
+
+  .hero-section h1,
+  .hero-section h2,
+  .hero-secondary {
+    width: 770px;
+  }
+
+  .hero-section h1,
+  .hero-section h2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .hero-section h1 {
+    margin-top: -250px;
+    padding-top: 0;
+  }
+
+  .hero-secondary {
+    margin-bottom: 24px;
+    line-height: 32px;
+  }
+
+  .projects-header .indicator-icon {
+    display: none;
+  }
+
+  .projects {
+    grid-template: 50% 50% / 1fr 1fr 1fr;
+    padding: 0 106px 0 117px;
+  }
+
+  .project {
+    width: 333px;
+    height: auto;
+    margin: 12px;
+  }
+
+  #about-me .about-me-top {
+    padding-top: 152px;
+    align-self: center;
+    background:
+      url("images/backround-images/desktop-backgrounds/about-me-background1-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/about-me-background2-desktop.svg");
+    background-position: 0 90%, 100% 35%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 15% auto, 13% auto;
+  }
+
+  .about-me-para {
+    width: 770px;
+    align-self: center;
+  }
+
+  #about-me .technologies {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  #get-in-contact {
+    flex-flow: row wrap;
+    padding: 0 111px;
+    margin-top: 118px;
+    justify-content: center;
+    background-image:
+      url("images/backround-images/desktop-backgrounds/contact-form-background1-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/contact-form-background2-desktop.svg"),
+      url("images/backround-images/desktop-backgrounds/contact-form-background3-desktop.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0 80%, 20% 75%, 100% 45%;
+    background-size: 14% auto, 11% auto, 15% auto;
+  }
+
+  #get-in-contact .primary-text {
+    font-size: 30px;
+    max-width: 463px;
+    margin: 24px;
+  }
+
+  #get-in-contact form {
+    width: 684px;
+  }
+
+  #get-in-contact form input,
+  #get-in-contact form textarea {
+    width: 684px;
+  }
+
+  #get-in-contact form button {
+    align-self: baseline;
+    margin-left: 0;
+  }
+
+  #get-in-contact .my-email {
+    display: none;
+  }
+
+  #get-in-contact hr {
+    display: block;
+    margin-top: 200px;
+    border: 1px solid #dfe1e6;
+    width: 100%;
+  }
 }
