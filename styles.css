@@ -559,3 +559,41 @@ hr {
     width: 100%;
   }
 }
+
+@keyframes slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    margin-right: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
