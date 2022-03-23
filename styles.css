@@ -9,19 +9,19 @@ ul {
   list-style-type: none;
 }
 
-header {
+.header-mobile {
   margin: 22px 20px 0;
   display: flex;
   justify-content: space-between;
 }
 
-header .welcome {
+.header-mobile .welcome {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
 }
 
-header .menu-button {
+.header-mobile .menu-button {
   background: none;
   border: none;
 }
@@ -32,8 +32,12 @@ header .menu-button {
   text-align: center;
   background-image: url("images/backround-images/mobile-backrounds/header-background-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  overflow: hidden;
+  background-size: 100%;
+  height: 173vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section h1,
@@ -87,8 +91,8 @@ header .menu-button {
   border: 1px solid #dfe1e6;
   border-radius: 32px;
   margin: 42px 0 0;
-  padding-top: 6px;
-  animation: fade-in 1.5s;
+  padding: 6px 1px 0 0;
+  width: 36px;
 }
 
 .projects-header {
@@ -259,6 +263,7 @@ header .menu-button {
   background: #ebf0ee;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #about-me .technology img {
@@ -374,9 +379,67 @@ header .menu-button {
   color: #42526e;
 }
 
+.header-desktop {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .hero-section {
+    background-size: 100% 100%;
+    min-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    grid-template: 1fr 1fr 1fr / 50% 50%;
+  }
+
+  #about-me .technologies {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  #about-me .technology {
+    margin-top: -24px;
+  }
+}
+
 @media only screen and (min-width: 1080px) {
   .header-mobile {
     display: none;
+  }
+
+  .header-desktop {
+    margin: 16px 20px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .header-desktop ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-desktop li {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 12px;
+  }
+
+  .header-desktop a {
+    text-decoration: none;
+    color: #344563;
   }
 
   .hero-section {
@@ -424,7 +487,7 @@ header .menu-button {
   }
 
   .project {
-    min-width: 369px;
+    width: 333px;
     height: auto;
     margin: 12px;
   }
@@ -491,82 +554,9 @@ header .menu-button {
   }
 
   #get-in-contact hr {
+    display: block;
     margin-top: 200px;
     border: 1px solid #dfe1e6;
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .header-desktop {
-    display: none;
-  }
-
-  hr {
-    display: none;
-  }
-}
-
-.header-desktop {
-  justify-content: center;
-  margin-top: 16px;
-  padding: 0;
-  animation: fade-in 1.5s;
-}
-
-.header-desktop ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.header-desktop li {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  padding: 10px 12px;
-}
-
-.header-desktop a {
-  text-decoration: none;
-  color: #344563;
-}
-
-@keyframes slide-in-right {
-  from {
-    margin-left: 100%;
-    width: 300%;
-    opacity: 0;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in-left {
-  from {
-    margin-right: 100%;
-    width: 300%;
-    opacity: 0;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 100%;
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
