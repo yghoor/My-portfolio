@@ -26,6 +26,60 @@ ul {
   border: none;
 }
 
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f7f7f9;
+  overflow: hidden;
+  transition: 0.35s;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-content {
+  background-color: #fff;
+  height: 92%;
+  width: 100%;
+  padding-top: 4%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.overlay-list {
+  padding-left: 6%;
+}
+
+.overlay-list a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
+.overlay-list li {
+  margin-bottom: 22px;
+}
+
+.overlay a {
+  text-decoration: none;
+  transition: 0.2s;
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
+}
+
+.overlay a:active {
+  color: #36b37f;
+}
+
+.overlay .closebtn {
+  font-size: 34px;
+  color: rgb(103 121 142 / 70%);
+  margin-left: 87%;
+}
+
 .hero-section {
   margin-top: 16px;
   color: #172b4d;
