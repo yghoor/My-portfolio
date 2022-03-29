@@ -22,11 +22,21 @@
       <section class="header-mobile">
         <div class="welcome">Welcome</div>
 
-        <nav>
-          <button class="menu-button">
-            <img src="images/icons/menu-icon.svg" alt="Menu Button" />
-          </button>
-        </nav>
+        <button class="menu-button" onclick="openNav()">
+          <img src="images/icons/menu-icon.svg" alt="Menu Button" />
+        </button>
+
+        <div id="myNav" class="overlay">
+          <div class="overlay-content">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <ul class="overlay-list">
+              <li><a href="#project-list" onclick="closeNav()">Portfolio</a></li>
+              <li><a href="#about-me" onclick="closeNav()">About</a></li>
+              <li><a href="#get-in-contact" onclick="closeNav()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
       
       <section class="header-desktop">
