@@ -4,10 +4,16 @@
 
 > Built according to a Figma template.
 
+![screenshot](images/website-screenshot.png)
+
 ## Built With
 
 - HTML
 - CSS
+
+## Live Demo
+
+[Live Demo Link](https://yghoor.github.io/My-portfolio/)
 
 ## Author
 
