@@ -51,9 +51,14 @@ ul {
   flex-direction: column;
 }
 
+.hero-section h1 {
+  animation: slide-in-right 1.5s;
+}
+
 .hero-section h2 {
   padding: 0 10px 10px;
   color: #36b37e;
+  animation: slide-in-left 1.5s;
 }
 
 .hero-secondary {
@@ -61,6 +66,7 @@ ul {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  animation: fade-in 3s;
 }
 
 .socials ul {
@@ -69,10 +75,15 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-in 1.5s;
 }
 
 .social {
   margin-right: 18px;
+}
+
+.social img {
+  transition: all 0.25s;
 }
 
 .hero-section .scroll-button {
@@ -119,10 +130,20 @@ ul {
   border-radius: 8px;
   max-width: 327px;
   justify-content: center;
+  transition: all 0.2s ease-out;
+}
+
+.project:hover {
+  border: 2px solid #36b37f;
+  transform: scale(1.025);
 }
 
 .project img {
   border-radius: 8px;
+}
+
+.social img:hover {
+  transform: scale(1.25);
 }
 
 .project h2 {
@@ -166,6 +187,7 @@ ul {
   background: #36b37f;
   border-radius: 4px;
   border: none;
+  transition: all 0.2s ease-out;
 }
 
 .see-project {
@@ -175,12 +197,16 @@ ul {
 }
 
 .button:hover {
-  background: #36b37f;
+  background: #fff;
+  color: #36b37f;
+  border: solid 1px #36b37f;
   box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
+  transform: scale(1.225);
 }
 
 .button:active {
   background: #008552;
+  color: #fff;
 }
 
 #about-me .about-me-top {
@@ -531,5 +557,43 @@ hr {
     margin-top: 200px;
     border: 1px solid #dfe1e6;
     width: 100%;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    margin-right: 100%;
+    width: 300%;
+    opacity: 0;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
