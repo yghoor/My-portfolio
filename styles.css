@@ -26,6 +26,10 @@ ul {
   border: none;
 }
 
+.header-mobile .menu-button:active {
+  opacity: 0.4;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
