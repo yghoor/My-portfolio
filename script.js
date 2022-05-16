@@ -66,6 +66,99 @@ const projectModal6 = {
   sourceLink: '#',
 };
 
+function createModal(projectModalObj) {
+  const modal = document.createElement('div');
+  modal.id = 'modal';
+
+  document.body.prepend(modal);
+
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'closebtn';
+  closeBtn.setAttribute('onclick', 'closeModal()');
+  closeBtn.setAttribute('aria-hidden', 'true');
+  closeBtn.textContent = 'X';
+  modal.appendChild(closeBtn);
+
+  const modalProjectImg = document.createElement('img');
+  modalProjectImg.setAttribute('src', `${projectModalObj.imgLink}`);
+  modalProjectImg.setAttribute('alt', `${projectModalObj.imgAlt}`);
+  modalProjectImg.className = 'modal-project-img';
+  modal.appendChild(modalProjectImg);
+
+  const modalDesktopHeader = document.createElement('section');
+  modalDesktopHeader.className = 'modal-desktop-header';
+
+  const modalHeader = document.createElement('h2');
+  modalHeader.className = 'modal-header';
+  modalHeader.textContent = `${projectModalObj.projectTitle}`;
+  modalDesktopHeader.appendChild(modalHeader);
+
+  const modalLinksDesktop = document.createElement('div');
+  modalLinksDesktop.className = 'modal-links-desktop';
+
+  const modalButtonLive1 = document.createElement('a');
+  modalButtonLive1.setAttribute('href', `${projectModalObj.liveLink}`);
+  modalButtonLive1.className = 'modal-button';
+
+  const seeLive = document.createElement('p');
+  seeLive.textContent = 'See Live';
+  modalButtonLive1.appendChild(seeLive);
+
+  const seeLiveIcon = document.createElement('img');
+  seeLiveIcon.setAttribute('src', 'images/icons/export-icon.svg');
+  seeLiveIcon.setAttribute('alt', '');
+  modalButtonLive1.appendChild(seeLiveIcon);
+
+  modalLinksDesktop.appendChild(modalButtonLive1);
+
+  const modalButtonSource1 = document.createElement('a');
+  modalButtonSource1.setAttribute('href', `${projectModalObj.sourceLink}`);
+  modalButtonSource1.className = 'modal-button';
+
+  const seeSource = document.createElement('p');
+  seeSource.textContent = 'See Source';
+  modalButtonSource1.appendChild(seeSource);
+
+  const seeSourceIcon = document.createElement('img');
+  seeSourceIcon.setAttribute('src', 'images/icons/light-github-icon.svg');
+  seeSourceIcon.setAttribute('alt', 'GitHub Icon');
+  modalButtonSource1.appendChild(seeSourceIcon);
+
+  modalLinksDesktop.appendChild(modalButtonSource1);
+
+  modalDesktopHeader.appendChild(modalLinksDesktop);
+
+  modal.appendChild(modalDesktopHeader);
+
+  const tags = document.createElement('ul');
+  tags.className = 'tags';
+  for (let i = 0; i < projectModalObj.technologies.length; i += 1) {
+    const tag = document.createElement('li');
+    tag.className = 'tag';
+    tag.textContent = `${projectModalObj.technologies[i]}`;
+    tags.appendChild(tag);
+  }
+
+  modal.appendChild(tags);
+
+  const modalText = document.createElement('p');
+  modalText.className = 'modal-text';
+  modalText.textContent = `${projectModalObj.projectDiscription}`;
+  modal.appendChild(modalText);
+
+  const modalLinksMobile = document.createElement('div');
+  modalLinksMobile.className = 'modal-links-mobile';
+
+  const modalButtonLive2 = modalButtonLive1.cloneNode(true);
+
+  const modalButtonSource2 = modalButtonSource1.cloneNode(true);
+
+  modalLinksMobile.appendChild(modalButtonLive2);
+
+  modalLinksMobile.appendChild(modalButtonSource2);
+
+  modal.appendChild(modalLinksMobile);
+}
 const allProjects = {
   project1: {
     projectImg: 'images/project-image.jpg',
