@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
 }
