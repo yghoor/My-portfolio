@@ -223,10 +223,12 @@ ul {
 
 .project .tags {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 16px 0;
+  margin: 16px 8px;
   padding: 0;
+  gap: 8px;
 }
 
 .project .tag {
@@ -238,7 +240,6 @@ ul {
   padding: 8px 11px;
   background: #ebf0ee;
   border-radius: 4px;
-  margin: 0 8px;
 }
 
 .button {
