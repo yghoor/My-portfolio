@@ -159,6 +159,28 @@ function createModal(projectModalObj) {
 
   modal.appendChild(modalLinksMobile);
 }
+
+function openModal(modalNum) {
+  createModal(modalNum);
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('main-page').style.filter = 'blur(10px)';
+
+  const pageBody = document.body;
+  pageBody.style.height = '100vh';
+  pageBody.style.overflowY = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('main-page').style.filter = 'none';
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+  modal.remove();
+
+  const pageBody = document.body;
+  pageBody.style.height = '';
+  pageBody.style.overflowY = '';
+}
+
 const allProjects = {
   project1: {
     projectImg: 'images/project-image.jpg',
