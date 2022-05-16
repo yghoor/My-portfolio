@@ -9,6 +9,13 @@ ul {
   list-style-type: none;
 }
 
+.modal-links-mobile a,
+.modal-links-desktop a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0%);
+}
+
 .header-mobile {
   margin: 22px 20px 0;
   display: flex;
@@ -266,6 +273,111 @@ ul {
 .button:active {
   background: #008552;
   color: #fff;
+}
+
+#modal {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  margin: 15px;
+  padding: 16px;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#modal .closebtn {
+  font-size: 34px;
+  border: none;
+  background: none;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  transition: 0.2s;
+}
+
+#modal .closebtn:hover {
+  transform: scale(1.225);
+}
+
+#modal .modal-project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#modal .header {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.modal-links-desktop {
+  display: none;
+}
+
+#modal .tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#modal .tag {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+  padding: 8px 11px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  margin: 0;
+}
+
+#modal .modal-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-links-mobile {
+  display: flex;
+  margin: 24px 0;
+  gap: 10px;
+}
+
+.modal-button {
+  display: flex;
+  gap: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  padding: 15px;
+  background: #36b37f;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.2s ease-out;
+}
+
+.modal-button:hover {
+  border: solid 1px #36b37f;
+  box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
+}
+
+.modal-button:active {
+  background: #008552;
+  color: #fff;
+}
+
+.modal-links-mobile p,
+.modal-links-desktop p {
+  margin: 0;
 }
 
 #about-me .about-me-top {
@@ -548,6 +660,56 @@ hr {
     width: 333px;
     height: auto;
     margin: 12px;
+  }
+
+  #modal {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  #modal .closebtn {
+    background-color: #ebecf0;
+    color: #67798e;
+    border-radius: 8px;
+    padding: 0 10px;
+    right: 15px;
+    top: 15px;
+  }
+
+  #modal .closebtn:hover {
+    color: #36b37f;
+    border: solid 1px #36b37f;
+    box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
+  }
+
+  #modal .modal-project-img {
+    margin-top: 48px;
+  }
+
+  .modal-desktop-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .modal-links-desktop {
+    display: flex;
+    margin: 24px 0;
+    gap: 10px;
+  }
+
+  .modal-button {
+    font-size: 15px;
+    min-width: 115px;
+    height: auto;
+  }
+
+  #modal .tag {
+    border-radius: 8px;
+  }
+
+  .modal-links-mobile {
+    display: none;
   }
 
   #about-me .about-me-top {
