@@ -293,6 +293,8 @@ projectsArray.forEach((project) => {
 
 projectsList.appendChild(projectsGrid);
 
+// Validate contact form email address
+
 const form = document.getElementById('contact-form');
 const emailInput = document.getElementById('email-address');
 const errorMsg = document.querySelector('.error-msg');
