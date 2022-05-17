@@ -295,3 +295,4 @@ projectsList.appendChild(projectsGrid);
 
 const form = document.getElementById('contact-form');
 const emailInput = document.getElementById('email-address');
+const errorMsg = document.querySelector('.error-msg');
