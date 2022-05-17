@@ -299,3 +299,9 @@ const errorMsg = document.querySelector('.error-msg');
 
 const emailValidity = /^[a-z0-9@.]+$/;
 
+form.addEventListener('submit', (event) => {
+  if (!emailValidity.test(emailInput.value)) {
+    event.preventDefault();
+    errorMsg.textContent = 'Your email address needs to be in lower case';
+  }
+});
