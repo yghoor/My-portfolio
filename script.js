@@ -292,3 +292,6 @@ projectsArray.forEach((project) => {
 });
 
 projectsList.appendChild(projectsGrid);
+
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email-address');
