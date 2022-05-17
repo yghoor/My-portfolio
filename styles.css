@@ -516,6 +516,14 @@ ul {
   color: #6b778c;
 }
 
+#get-in-contact form .error-msg {
+  padding: 6px 0;
+  font-size: 15px;
+  color: #f30000;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
 #get-in-contact form textarea {
   width: 327px;
   height: 114px;
