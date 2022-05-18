@@ -234,8 +234,8 @@ function createModal(projectNum) {
   modal.appendChild(modalLinksMobile);
 }
 
-function openModal(modalNum) {
-  createModal(modalNum);
+function openModal(projectNum) {
+  createModal(projectNum);
   document.getElementById('modal').style.display = 'flex';
   document.getElementById('main-page').style.filter = 'blur(10px)';
 
