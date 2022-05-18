@@ -338,3 +338,14 @@ if (!localStorage.getItem('form')) {
   populateForm();
 }
 
+userName.addEventListener('input', (event) => {
+  populateStorage();
+});
+
+emailInput.addEventListener('input', (event) => {
+  populateStorage();
+});
+
+message.addEventListener('input', (event) => {
+  populateStorage();
+});
