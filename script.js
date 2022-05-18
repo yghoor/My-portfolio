@@ -296,7 +296,7 @@ projectsList.appendChild(projectsGrid);
 // Validate contact form email address
 
 const form = document.getElementById('contact-form');
-const emailInput = document.getElementById('email-address');
+const emailInput = document.getElementById('email');
 const errorMsg = document.querySelector('.error-msg');
 
 const emailValidity = /^[a-z0-9@.]+$/;
