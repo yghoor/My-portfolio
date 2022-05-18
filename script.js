@@ -307,3 +307,34 @@ form.addEventListener('submit', (event) => {
     errorMsg.textContent = 'Your email address needs to be in lower case';
   }
 });
+
+// Implement local storage
+
+const userName = document.getElementById('user-name');
+const message = document.getElementById('message');
+const formInputs = {
+  userName: '',
+  emailInput: '',
+  message: '',
+};
+
+function populateStorage() {
+  formInputs.userName = userName.value;
+  formInputs.emailInput = emailInput.value;
+  formInputs.message = message.value;
+  localStorage.setItem('form', JSON.stringify(formInputs));
+}
+
+function populateForm() {
+  const storedForm = JSON.parse(localStorage.getItem('form'));
+  userName.value = storedForm.userName;
+  emailInput.value = storedForm.emailInput;
+  message.value = storedForm.message;
+}
+
+if (!localStorage.getItem('form')) {
+  populateStorage();
+} else {
+  populateForm();
+}
+
