@@ -138,6 +138,9 @@ allProjects.forEach((project, projectNum) => {
 
 projectsList.appendChild(projectsGrid);
 
+// Create modal function
+
+function createModal(projectNum) {
   const modal = document.createElement('div');
   modal.id = 'modal';
 
@@ -151,8 +154,8 @@ projectsList.appendChild(projectsGrid);
   modal.appendChild(closeBtn);
 
   const modalProjectImg = document.createElement('img');
-  modalProjectImg.setAttribute('src', `${projectModalObj.imgLink}`);
-  modalProjectImg.setAttribute('alt', `${projectModalObj.imgAlt}`);
+  modalProjectImg.setAttribute('src', `${allProjects[projectNum].modalImg}`);
+  modalProjectImg.setAttribute('alt', `${allProjects[projectNum].imgAlt}`);
   modalProjectImg.className = 'modal-project-img';
   modal.appendChild(modalProjectImg);
 
@@ -161,14 +164,14 @@ projectsList.appendChild(projectsGrid);
 
   const modalHeader = document.createElement('h2');
   modalHeader.className = 'modal-header';
-  modalHeader.textContent = `${projectModalObj.projectTitle}`;
+  modalHeader.textContent = `${allProjects[projectNum].projectTitle}`;
   modalDesktopHeader.appendChild(modalHeader);
 
   const modalLinksDesktop = document.createElement('div');
   modalLinksDesktop.className = 'modal-links-desktop';
 
   const modalButtonLive1 = document.createElement('a');
-  modalButtonLive1.setAttribute('href', `${projectModalObj.liveLink}`);
+  modalButtonLive1.setAttribute('href', `${allProjects[projectNum].liveLink}`);
   modalButtonLive1.className = 'modal-button';
 
   const seeLive = document.createElement('p');
@@ -183,7 +186,7 @@ projectsList.appendChild(projectsGrid);
   modalLinksDesktop.appendChild(modalButtonLive1);
 
   const modalButtonSource1 = document.createElement('a');
-  modalButtonSource1.setAttribute('href', `${projectModalObj.sourceLink}`);
+  modalButtonSource1.setAttribute('href', `${allProjects[projectNum].sourceLink}`);
   modalButtonSource1.className = 'modal-button';
 
   const seeSource = document.createElement('p');
@@ -203,10 +206,10 @@ projectsList.appendChild(projectsGrid);
 
   const tags = document.createElement('ul');
   tags.className = 'tags';
-  for (let i = 0; i < projectModalObj.technologies.length; i += 1) {
+  for (let i = 0; i < allProjects[projectNum].technologies.length; i += 1) {
     const tag = document.createElement('li');
     tag.className = 'tag';
-    tag.textContent = `${projectModalObj.technologies[i]}`;
+    tag.textContent = `${allProjects[projectNum].technologies[i]}`;
     tags.appendChild(tag);
   }
 
@@ -214,7 +217,7 @@ projectsList.appendChild(projectsGrid);
 
   const modalText = document.createElement('p');
   modalText.className = 'modal-text';
-  modalText.textContent = `${projectModalObj.projectDiscription}`;
+  modalText.textContent = `${allProjects[projectNum].modalDescription}`;
   modal.appendChild(modalText);
 
   const modalLinksMobile = document.createElement('div');
