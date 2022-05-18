@@ -7,67 +7,137 @@ function closeNav() {
   document.getElementById('myNav').style.height = '0%';
 }
 
-const projectModal1 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+const allProjects = [
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Codekit', 'GitHub', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
-const projectModal2 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
-const projectModal3 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML', 'React'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
-const projectModal4 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
-const projectModal5 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
 
-const projectModal6 = {
-  imgLink: 'images/modal-image.jpg',
-  imgAlt: 'Project Screenshot',
-  projectTitle: 'Keeping track of hundreds of components',
-  technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-  projectDiscription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
-  liveLink: '#',
-  sourceLink: '#',
-};
+  {
+    projectImg: 'images/project-image.jpg',
+    modalImg: 'images/modal-image.jpg',
+    imgAlt: 'Project Screenshot',
+    projectTitle: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    liveLink: '#',
+    sourceLink: '#',
+  },
+];
 
-function createModal(projectModalObj) {
+// Create projects on page
+
+const projectsList = document.getElementById('project-list');
+
+const projectsHeader = document.createElement('div');
+projectsHeader.className = 'projects-header';
+
+const headerText = document.createElement('h2');
+headerText.className = 'header-text';
+headerText.textContent = 'My Recent Works';
+projectsHeader.appendChild(headerText);
+
+const indicator = document.createElement('div');
+indicator.className = 'indicator-icon';
+
+const indicatorIcon = document.createElement('img');
+indicatorIcon.setAttribute('src', 'images/icons/indicator-icon.svg');
+indicatorIcon.setAttribute('alt', '');
+indicator.appendChild(indicatorIcon);
+projectsHeader.appendChild(indicator);
+
+projectsList.appendChild(projectsHeader);
+
+const projectsGrid = document.createElement('div');
+projectsGrid.className = 'projects';
+
+allProjects.forEach((project, projectNum) => {
+  const projectX = document.createElement('div');
+  projectX.className = 'project';
+
+  const projectImage = document.createElement('img');
+  projectImage.setAttribute('src', `${project.projectImg}`);
+  projectImage.setAttribute('alt', `${project.imgAlt}`);
+  projectX.appendChild(projectImage);
+
+  const title = document.createElement('h3');
+  title.textContent = `${project.projectTitle}`;
+  projectX.appendChild(title);
+
+  const tags = document.createElement('ul');
+  tags.className = 'tags';
+
+  for (let i = 0; i < project.technologies.length; i += 1) {
+    const tag = document.createElement('li');
+    tag.className = 'tag';
+    tag.textContent = `${project.technologies[i]}`;
+    tags.appendChild(tag);
+  }
+  projectX.appendChild(tags);
+
+  const seeProject = document.createElement('button');
+  seeProject.className = 'see-project button';
+  seeProject.setAttribute('onclick', `openModal(${projectNum})`);
+  seeProject.textContent = 'See Project';
+  projectX.appendChild(seeProject);
+
+  projectsGrid.appendChild(projectX);
+
+  projectNum += 1;
+});
+
+projectsList.appendChild(projectsGrid);
+
   const modal = document.createElement('div');
   modal.id = 'modal';
 
@@ -181,114 +251,3 @@ function closeModal() {
   pageBody.style.height = '';
   pageBody.style.overflowY = '';
 }
-
-const allProjects = {
-  project1: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '1',
-  },
-
-  project2: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '2',
-  },
-
-  project3: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '3',
-  },
-
-  project4: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '4',
-  },
-
-  project5: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '5',
-  },
-
-  project6: {
-    projectImg: 'images/project-image.jpg',
-    imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
-    modalNum: '6',
-  },
-};
-
-const projectsList = document.getElementById('project-list');
-
-const projectsHeader = document.createElement('div');
-projectsHeader.className = 'projects-header';
-
-const headerText = document.createElement('h2');
-headerText.className = 'header-text';
-headerText.textContent = 'My Recent Works';
-projectsHeader.appendChild(headerText);
-
-const indicator = document.createElement('div');
-indicator.className = 'indicator-icon';
-
-const indicatorIcon = document.createElement('img');
-indicatorIcon.setAttribute('src', 'images/icons/indicator-icon.svg');
-indicatorIcon.setAttribute('alt', '');
-indicator.appendChild(indicatorIcon);
-projectsHeader.appendChild(indicator);
-
-projectsList.appendChild(projectsHeader);
-
-const projectsGrid = document.createElement('div');
-projectsGrid.className = 'projects';
-
-const projectsArray = Object.keys(allProjects);
-
-projectsArray.forEach((project) => {
-  const projectX = document.createElement('div');
-  projectX.className = 'project';
-
-  const projectImage = document.createElement('img');
-  projectImage.setAttribute('src', `${allProjects[project].projectImg}`);
-  projectImage.setAttribute('alt', `${allProjects[project].imgAlt}`);
-  projectX.appendChild(projectImage);
-
-  const title = document.createElement('h3');
-  title.textContent = `${allProjects[project].projectTitle}`;
-  projectX.appendChild(title);
-
-  const tags = document.createElement('ul');
-  tags.className = 'tags';
-
-  for (let i = 0; i < allProjects[project].technologies.length; i += 1) {
-    const tag = document.createElement('li');
-    tag.className = 'tag';
-    tag.textContent = `${allProjects[project].technologies[i]}`;
-    tags.appendChild(tag);
-  }
-  projectX.appendChild(tags);
-
-  const seeProject = document.createElement('button');
-  seeProject.className = 'see-project button';
-  seeProject.setAttribute('onclick', `openModal(projectModal${allProjects[project].modalNum})`);
-  seeProject.textContent = 'See Project';
-  projectX.appendChild(seeProject);
-
-  projectsGrid.appendChild(projectX);
-});
-
-projectsList.appendChild(projectsGrid);
