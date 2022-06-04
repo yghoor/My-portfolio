@@ -279,8 +279,6 @@ ul {
 #modal {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-
-  /* display: none; */
   position: fixed;
   z-index: 1;
   margin: 15px;
