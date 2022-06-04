@@ -181,8 +181,6 @@ function createModal(projectNum) {
   seeLiveIcon.setAttribute('alt', '');
   modalButtonLive1.appendChild(seeLiveIcon);
 
-  modalLinksDesktop.appendChild(modalButtonLive1);
-
   const modalButtonSource1 = document.createElement('a');
   modalButtonSource1.setAttribute('href', `${allProjects[projectNum].sourceLink}`);
   modalButtonSource1.className = 'modal-button';
@@ -196,7 +194,7 @@ function createModal(projectNum) {
   seeSourceIcon.setAttribute('alt', 'GitHub Icon');
   modalButtonSource1.appendChild(seeSourceIcon);
 
-  modalLinksDesktop.appendChild(modalButtonSource1);
+  modalLinksDesktop.append(modalButtonSource1, modalButtonLive1);
 
   modalDesktopHeader.appendChild(modalLinksDesktop);
 
@@ -225,9 +223,7 @@ function createModal(projectNum) {
 
   const modalButtonSource2 = modalButtonSource1.cloneNode(true);
 
-  modalLinksMobile.appendChild(modalButtonLive2);
-
-  modalLinksMobile.appendChild(modalButtonSource2);
+  modalLinksMobile.append(modalButtonSource2, modalButtonLive2);
 
   modal.appendChild(modalLinksMobile);
 }
