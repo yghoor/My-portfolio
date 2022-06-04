@@ -132,8 +132,6 @@ allProjects.forEach((project, projectNum) => {
   projectX.appendChild(seeProject);
 
   projectsGrid.appendChild(projectX);
-
-  projectNum += 1;
 });
 
 projectsList.appendChild(projectsGrid);
