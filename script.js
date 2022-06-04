@@ -9,7 +9,7 @@ function closeNav() {
 
 const allProjects = [
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
@@ -20,7 +20,7 @@ const allProjects = [
   },
 
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
@@ -31,7 +31,7 @@ const allProjects = [
   },
 
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
@@ -42,7 +42,7 @@ const allProjects = [
   },
 
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
@@ -53,7 +53,7 @@ const allProjects = [
   },
 
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
@@ -64,7 +64,7 @@ const allProjects = [
   },
 
   {
-    projectImg: 'images/project-image.jpg',
+    projectImg: 'images/project-image.png',
     modalImg: 'images/modal-image.jpg',
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
