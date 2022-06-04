@@ -117,7 +117,7 @@ allProjects.forEach((project, projectNum) => {
   const tags = document.createElement('ul');
   tags.className = 'tags';
 
-  for (let i = 0; i < project.technologies.length; i += 1) {
+  for (let i = 0; i < 4; i += 1) {
     const tag = document.createElement('li');
     tag.className = 'tag';
     tag.textContent = `${project.technologies[i]}`;
