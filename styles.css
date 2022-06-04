@@ -780,6 +780,12 @@ hr {
   }
 }
 
+@media only screen and (min-width: 1500px) {
+  .project {
+    width: 43vh;
+  }
+}
+
 @keyframes slide-in-right {
   from {
     margin-left: 100%;
