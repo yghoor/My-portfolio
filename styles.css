@@ -217,7 +217,7 @@ ul {
   line-height: 32px;
   text-align: center;
   align-self: center;
-  margin: 16px 0;
+  margin: 6px 0;
   width: 295px;
 }
 
@@ -226,7 +226,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 16px 8px;
+  margin: 8px;
   padding: 0;
   gap: 8px;
 }
