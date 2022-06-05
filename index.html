@@ -2,15 +2,20 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N729VXDXN"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1N729VXDXN"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-1N729VXDXN');
+      gtag("config", "G-1N729VXDXN");
     </script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,312 +24,249 @@
   </head>
 
   <body>
-    <header>
-      <section class="header-mobile">
-        <h2 class="welcome">Welcome</h2>
+    <main id="main-page">
+      <header>
+        <section class="header-mobile">
+          <h2 class="welcome">Welcome</h2>
 
-        <button class="menu-button" onclick="openNav()">
-          <img src="images/icons/menu-icon.svg" alt="Menu Button" />
-        </button>
+          <button class="menu-button" onclick="openNav()">
+            <img src="images/icons/menu-icon.svg" alt="Menu Button" />
+          </button>
 
-        <div id="myNav" class="overlay">
-          <div class="overlay-content">
-            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="myNav" class="overlay">
+            <div class="overlay-content">
+              <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <ul class="overlay-list">
-              <li><a href="#project-list" onclick="closeNav()">Portfolio</a></li>
-              <li><a href="#about-me" onclick="closeNav()">About</a></li>
-              <li><a href="#get-in-contact" onclick="closeNav()">Contact</a></li>
-            </ul>
+              <ul class="overlay-list">
+                <li>
+                  <a href="#project-list" onclick="closeNav()">Portfolio</a>
+                </li>
+                <li><a href="#about-me" onclick="closeNav()">About</a></li>
+                <li>
+                  <a href="#get-in-contact" onclick="closeNav()">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
-      
-      <section class="header-desktop">
-        <nav>
-          <ul>
-            <li><a href="#project-list">Portfolio</a></li>
-            <li><a href="#about-me">About</a></li>
-            <li><a href="#get-in-contact">Contact</a></li>
-          </ul>
-        </nav>
-      </section>
-    </header>
+        </section>
 
-    <section class="hero-section">
-      <h1>Hey there. I’m Yahya</h1>
+        <section class="header-desktop">
+          <nav>
+            <ul>
+              <li><a href="#project-list">Portfolio</a></li>
+              <li><a href="#about-me">About</a></li>
+              <li><a href="#get-in-contact">Contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
 
-      <h2>I’m a software developer</h2>
+      <section class="hero-section">
+        <h1>Hey there. I’m Yahya</h1>
 
-      <p class="hero-secondary">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don’t hestiate to contact me.
-      </p>
+        <h2>I’m a software developer</h2>
 
-      <nav class="socials">
-        <ul>
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/twitter-icon.svg" alt="Twitter Profile" />
-            </a>
-          </li>
-
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/linkedin-icon.svg" alt="LinkedIn Profile" />
-            </a>
-          </li>
-
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/medium-icon.svg" alt="Medium Profile" />
-            </a>
-          </li>
-
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/github-icon.svg" alt="Github Profile" />
-            </a>
-          </li>
-
-          <li class="social">
-            <a href="#">
-              <img
-                src="images/icons/angellist-icon.svg"
-                alt="Angellist Profile"
-              />
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <button class="scroll-button">
-        <img src="images/icons/down-arrow-icon.svg" alt="Scroll Down Button" />
-      </button>
-    </section>
-
-    <section id="project-list">
-      <div class="projects-header">
-        <h2 class="header-text">My Recent Works</h2>
-
-        <div class="indicator-icon">
-          <img src="images/icons/indicator-icon.svg" alt="Indicator" />
-        </div>
-      </div>
-      
-      <div class="projects">
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-  
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-  
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-  
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-  
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-  
-        <div class="project">
-          <img src="images/project-image.jpg" alt="Project Screenshot" />
-  
-          <h3>Multi-Post Stories Gain+Glory</h3>
-  
-          <ul class="tags">
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">HTML</li>
-          </ul>
-  
-          <button class="see-project button">See Project</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="about-me">
-      <div class="about-me-top">
-        <h2>About me</h2>
-
-        <p class="about-me-para">
+        <p class="hero-secondary">
           I can help you build a product , feature or website Look through some
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hestiate to contact me.
         </p>
 
-        <button class="get-resume button">Get my Resume</button>
-      </div>
+        <nav class="socials">
+          <ul>
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/twitter-icon.svg"
+                  alt="Twitter Profile"
+                />
+              </a>
+            </li>
 
-      <ul class="technologies">
-        <li class="technology">
-          <img src="images/icons/languages-icon.svg" alt="Languages Icon" />
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/linkedin-icon.svg"
+                  alt="LinkedIn Profile"
+                />
+              </a>
+            </li>
 
-          <h2>Languages</h2>
+            <li class="social">
+              <a href="#">
+                <img src="images/icons/medium-icon.svg" alt="Medium Profile" />
+              </a>
+            </li>
 
-          <ul class="tags">
-            <li class="tag">JavaScript</li>
-            <li class="tag">Ruby</li>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
+            <li class="social">
+              <a href="#">
+                <img src="images/icons/github-icon.svg" alt="Github Profile" />
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/angellist-icon.svg"
+                  alt="Angellist Profile"
+                />
+              </a>
+            </li>
           </ul>
-        </li>
+        </nav>
 
-        <li class="technology">
-          <img src="images/icons/frameworks-icon.svg" alt="Frameworks Icon" />
+        <button class="scroll-button">
+          <img
+            src="images/icons/down-arrow-icon.svg"
+            alt="Scroll Down Button"
+          />
+        </button>
+      </section>
 
-          <h2>Frameworks</h2>
+      <section id="project-list"></section>
 
-          <ul class="tags">
-            <li class="tag">Bootstrap</li>
-            <li class="tag">Ruby On Rails</li>
-            <li class="tag">RSpec</li>
-            <li class="tag">Capybara</li>
-            <li class="tag">Selenium</li>
-          </ul>
-        </li>
+      <section id="about-me">
+        <div class="about-me-top">
+          <h2>About me</h2>
 
-        <li class="technology">
-          <img src="images/icons/skills-icon.svg" alt="Skills Icon" />
+          <p class="about-me-para">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
 
-          <h2>Skills</h2>
+          <button class="get-resume button">Get my Resume</button>
+        </div>
 
-          <ul class="tags">
-            <li class="tag">Codekit</li>
-            <li class="tag">Github</li>
-            <li class="tag">Codepen</li>
-            <li class="tag">Gitlab</li>
-            <li class="tag">Terminal</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+        <ul class="technologies">
+          <li class="technology">
+            <img src="images/icons/languages-icon.svg" alt="Languages Icon" />
 
-    <section id="get-in-contact">
-      <p class="primary-text">
-        I'm always interested in hearing about new projects, so if you'd like 
-        to chat please get in touch.
-      </p>
+            <h2>Languages</h2>
 
-      <form action="https://formspree.io/f/xvolaban" method="post">
-        <label class="input">
-          <input type="text" name="user_name" maxlength="30" placeholder="Full name" required>
-        </label>
-
-        <label class="input">
-          <input type="email" name="email-address" placeholder="Email address" required>
-        </label>
-
-        <label class="textarea">
-          <textarea name="message" maxlength="500" placeholder="Enter text here" required></textarea>
-        </label>
-
-        <button class="button" type="submit">Get in touch</button>  
-      </form>
-
-      <hr>
-
-      <nav class="socials">
-        <ul>
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/twitter-icon.svg" alt="Twitter Profile" />
-            </a>
+            <ul class="tags">
+              <li class="tag">JavaScript</li>
+              <li class="tag">Ruby</li>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+            </ul>
           </li>
 
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/linkedin-icon.svg" alt="LinkedIn Profile" />
-            </a>
+          <li class="technology">
+            <img src="images/icons/frameworks-icon.svg" alt="Frameworks Icon" />
+
+            <h2>Frameworks</h2>
+
+            <ul class="tags">
+              <li class="tag">Bootstrap</li>
+              <li class="tag">Ruby On Rails</li>
+              <li class="tag">RSpec</li>
+              <li class="tag">Capybara</li>
+              <li class="tag">Selenium</li>
+            </ul>
           </li>
 
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/medium-icon.svg" alt="Medium Profile" />
-            </a>
-          </li>
+          <li class="technology">
+            <img src="images/icons/skills-icon.svg" alt="Skills Icon" />
 
-          <li class="social">
-            <a href="#">
-              <img src="images/icons/github-icon.svg" alt="Github Profile" />
-            </a>
-          </li>
+            <h2>Skills</h2>
 
-          <li class="social">
-            <a href="#">
-              <img
-                src="images/icons/angellist-icon.svg"
-                alt="Angellist Profile"
-              />
-            </a>
+            <ul class="tags">
+              <li class="tag">Codekit</li>
+              <li class="tag">Github</li>
+              <li class="tag">Codepen</li>
+              <li class="tag">Gitlab</li>
+              <li class="tag">Terminal</li>
+            </ul>
           </li>
         </ul>
-      </nav>
+      </section>
 
-      <p class="my-email">ghooryahya@gmail.com</p>
-    </section>
+      <section id="get-in-contact">
+        <p class="primary-text">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </p>
+
+        <form action="https://formspree.io/f/xvolaban" method="post">
+          <label class="input">
+            <input
+              type="text"
+              name="user_name"
+              maxlength="30"
+              placeholder="Full name"
+              required
+            />
+          </label>
+
+          <label class="input">
+            <input
+              type="email"
+              name="email-address"
+              placeholder="Email address"
+              required
+            />
+          </label>
+
+          <label class="textarea">
+            <textarea
+              name="message"
+              maxlength="500"
+              placeholder="Enter text here"
+              required
+            ></textarea>
+          </label>
+
+          <button class="button" type="submit">Get in touch</button>
+        </form>
+
+        <hr />
+
+        <nav class="socials">
+          <ul>
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/twitter-icon.svg"
+                  alt="Twitter Profile"
+                />
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/linkedin-icon.svg"
+                  alt="LinkedIn Profile"
+                />
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="#">
+                <img src="images/icons/medium-icon.svg" alt="Medium Profile" />
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="#">
+                <img src="images/icons/github-icon.svg" alt="Github Profile" />
+              </a>
+            </li>
+
+            <li class="social">
+              <a href="#">
+                <img
+                  src="images/icons/angellist-icon.svg"
+                  alt="Angellist Profile"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="my-email">ghooryahya@gmail.com</p>
+      </section>
+    </main>
   </body>
 </html>
