@@ -218,7 +218,7 @@ ul {
   line-height: 32px;
   text-align: center;
   align-self: center;
-  margin: 16px 0;
+  margin: 6px 0;
   width: 295px;
 }
 
@@ -227,7 +227,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 16px 8px;
+  margin: 8px;
   padding: 0;
   gap: 8px;
 }
@@ -280,8 +280,6 @@ ul {
 #modal {
   max-height: calc(100vh - 100px);
   overflow-y: auto;
-
-  /* display: none; */
   position: fixed;
   z-index: 1;
   margin: 15px;
@@ -788,6 +786,12 @@ hr {
     margin-top: 200px;
     border: 1px solid #dfe1e6;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .project {
+    width: 43vh;
   }
 }
 
