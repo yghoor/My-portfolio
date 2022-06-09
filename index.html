@@ -188,7 +188,11 @@
           to chat please get in touch.
         </p>
 
-        <form action="https://formspree.io/f/xvolaban" method="post">
+        <form
+          action="https://formspree.io/f/xvolaban"
+          method="post"
+          id="contact-form"
+        >
           <label class="input">
             <input
               type="text"
@@ -202,7 +206,8 @@
           <label class="input">
             <input
               type="email"
-              name="email-address"
+              id="email-address"
+              name="email"
               placeholder="Email address"
               required
             />
@@ -216,6 +221,8 @@
               required
             ></textarea>
           </label>
+
+          <span class="error-msg" aria-live="polite"></span>
 
           <button class="button" type="submit">Get in touch</button>
         </form>

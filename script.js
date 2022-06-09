@@ -136,6 +136,21 @@ allProjects.forEach((project, projectNum) => {
 
 projectsList.appendChild(projectsGrid);
 
+// Validate contact form email address
+
+const form = document.getElementById('contact-form');
+const emailInput = document.getElementById('email-address');
+const errorMsg = document.querySelector('.error-msg');
+
+const emailValidity = /^[a-z0-9@.]+$/;
+
+form.addEventListener('submit', (event) => {
+  if (!emailValidity.test(emailInput.value)) {
+    event.preventDefault();
+    errorMsg.textContent = 'Your email address needs to be in lower case';
+  }
+});
+
 // Create modal function
 
 function createModal(projectNum) {

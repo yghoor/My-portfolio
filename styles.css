@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
@@ -512,6 +513,14 @@ ul {
 #get-in-contact form input::placeholder {
   font-size: 15px;
   color: #6b778c;
+}
+
+#get-in-contact form .error-msg {
+  padding: 6px 0;
+  font-size: 15px;
+  color: #f30000;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 #get-in-contact form textarea {
