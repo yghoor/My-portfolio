@@ -8,6 +8,8 @@ const formInputs = {
   message: '',
 };
 
+// Create functions for mobile nav functionality
+
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
 }
@@ -15,6 +17,8 @@ function openNav() {
 function closeNav() {
   document.getElementById('myNav').style.height = '0%';
 }
+
+// Initialize projects array
 
 const allProjects = [
   {
