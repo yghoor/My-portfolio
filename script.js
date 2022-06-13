@@ -1,4 +1,13 @@
 /* eslint-disable no-unused-vars */
+
+// Initialize form inputs object for local storage
+
+const formInputs = {
+  userName: '',
+  emailInput: '',
+  message: '',
+};
+
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
 }
@@ -274,11 +283,6 @@ function closeModal() {
 
 const userName = document.getElementById('user-name');
 const message = document.getElementById('message');
-const formInputs = {
-  userName: '',
-  emailInput: '',
-  message: '',
-};
 
 function populateStorage() {
   formInputs.userName = userName.value;
