@@ -302,10 +302,10 @@ function populateForm() {
   message.value = storedForm.message;
 }
 
-if (!localStorage.getItem('form')) {
-  populateStorage();
-} else {
+if (localStorage.getItem('form')) {
   populateForm();
+} else {
+  populateStorage();
 }
 
 userName.addEventListener('input', (event) => {
