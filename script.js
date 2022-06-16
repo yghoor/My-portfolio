@@ -1,4 +1,15 @@
 /* eslint-disable no-unused-vars */
+
+// Initialize form inputs object for local storage
+
+const formInputs = {
+  userName: '',
+  emailInput: '',
+  message: '',
+};
+
+// Create functions for mobile nav functionality
+
 function openNav() {
   document.getElementById('myNav').style.height = '100%';
 }
@@ -7,6 +18,8 @@ function closeNav() {
   document.getElementById('myNav').style.height = '0%';
 }
 
+// Initialize projects array
+
 const allProjects = [
   {
     projectImg: 'images/project-image.png',
@@ -14,7 +27,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Codekit', 'GitHub', 'JS', 'HTML', 'Bootstrap', 'Terminal', 'Codepen'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -25,7 +39,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JS', 'HTML'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -36,7 +51,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JS', 'HTML', 'React'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -47,7 +63,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JS', 'HTML'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -58,7 +75,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JS', 'HTML'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -69,7 +87,8 @@ const allProjects = [
     imgAlt: 'Project Screenshot',
     projectTitle: 'Multi-Post Stories Gain+Glory',
     technologies: ['Ruby on Rails', 'CSS', 'JS', 'HTML'],
-    modalDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry \'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release',
+    modalDescription:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
     liveLink: '#',
     sourceLink: '#',
   },
@@ -139,7 +158,7 @@ projectsList.appendChild(projectsGrid);
 // Validate contact form email address
 
 const form = document.getElementById('contact-form');
-const emailInput = document.getElementById('email-address');
+const emailInput = document.getElementById('email');
 const errorMsg = document.querySelector('.error-msg');
 
 const emailValidity = /^[a-z0-9@.]+$/;
@@ -263,3 +282,40 @@ function closeModal() {
   pageBody.style.height = '';
   pageBody.style.overflowY = '';
 }
+
+// Implement local storage
+
+const userName = document.getElementById('user-name');
+const message = document.getElementById('message');
+
+function populateStorage() {
+  formInputs.userName = userName.value;
+  formInputs.emailInput = emailInput.value;
+  formInputs.message = message.value;
+  localStorage.setItem('form', JSON.stringify(formInputs));
+}
+
+function populateForm() {
+  const storedForm = JSON.parse(localStorage.getItem('form'));
+  userName.value = storedForm.userName;
+  emailInput.value = storedForm.emailInput;
+  message.value = storedForm.message;
+}
+
+if (localStorage.getItem('form')) {
+  populateForm();
+} else {
+  populateStorage();
+}
+
+userName.addEventListener('input', (event) => {
+  populateStorage();
+});
+
+emailInput.addEventListener('input', (event) => {
+  populateStorage();
+});
+
+message.addEventListener('input', (event) => {
+  populateStorage();
+});
