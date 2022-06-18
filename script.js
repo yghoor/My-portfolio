@@ -22,15 +22,15 @@ function closeNav() {
 
 const allProjects = [
   {
-    projectImg: 'images/project-image.png',
-    modalImg: 'images/modal-image.jpg',
+    projectImg: 'images/projects/concert-site-screenshot.png',
+    modalImg: 'images/projects/concert-site-screenshot.png',
     imgAlt: 'Project Screenshot',
-    projectTitle: 'Multi-Post Stories Gain+Glory',
-    technologies: ['Codekit', 'GitHub', 'JS', 'HTML', 'Bootstrap', 'Terminal', 'Codepen'],
+    projectTitle: 'Event Site',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JS'],
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the release",
-    liveLink: '#',
-    sourceLink: '#',
+      'A site based on the "Creative Commons Global Summit 2015" site. The site was built to practise using HTML, CSS, and basic JavaScript. Only the home page and the about page were built',
+    liveLink: 'https://yghoor.github.io/event-site/',
+    sourceLink: 'https://github.com/yghoor/event-site',
   },
 
   {
