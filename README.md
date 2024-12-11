@@ -19,7 +19,7 @@
 
 👤 **Yahya Ghoor**
 
-- GitHub: [@githubhandle](https://github.com/yghoor)
+- GitHub: [@yghoor](https://github.com/yghoor)
 
 ## Acknowledgments
 
